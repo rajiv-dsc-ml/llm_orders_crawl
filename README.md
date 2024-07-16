@@ -14,8 +14,7 @@ Flow to execute :
    #after its activation , install all the required libraries mentioned in the requirements.txt by
    pip install -r requirements.txt   
 
-3. run the download_llm_gguf.py file that downloads the gguf file of an llm (https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf)
-i.e : go inside the repository in terminal and execute the command : python download_llm_gguf.py
+3. Earlier this step was to download the gguf file of an llm . However, experimenting with raven (the function calling llm) showed that it could extract the necessary items and give it to the required fucntion, and hence no need for another llm
 
 4. start login.py by executing this command in the terminal .
    Make sure the pwd is the repository address. 
