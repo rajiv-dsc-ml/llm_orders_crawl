@@ -30,8 +30,7 @@ This component relies on the quality of llm in terms of understandiing which fun
 Such llmm should also have the ability to extract the function arguments' values from the given prompt
 
 # 2.llm "brain"
-Since the function calling llm was not so bright to recognize some html element values, so I am using another llm (https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf) to do that . 
-For example, given html unstructured texts , it was hard for the function calling llm to recognize the html tag responsible for username , html tag responsible for password and finally the button responsible for sign in action
+the function calling llm is enough to extract required data from unstructured data and pass them to a required function
 
 # 3. Preprocessing
 Some preprocessing functions have been written that use regex to shorten the given html text so that the focus can be held on the tags where the required information can be present 
