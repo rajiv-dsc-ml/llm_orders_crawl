@@ -8,7 +8,8 @@ import re
 from utils1 import *
 import json
 from pydantic import BaseModel, SecretStr 
-
+import os
+from fastapi import FastAPI, Depends
 class User(BaseModel):
     username: str
     password: SecretStr
@@ -18,8 +19,7 @@ loginurl = 'https://www.amazon.in/gp/sign-in.html'
 url = 'https://www.amazon.in/gp/css/order-history/ref=nav_your_account'
 
 
-import os
-from fastapi import FastAPI, Depends
+
 
 app = FastAPI()
 
@@ -65,27 +65,11 @@ def crawler_method(user: User = Depends()):
     '''
 
     function_call = query_raven(prompt_f1)
-    res = eval(function_call)
+    opening_tags = eval(function_call)
 
-    prompt = f"""You are an expert Front End Developer who works with html and css.Find id of three html components:  sign in button, password and email, given html text as follows: \n {res}"""
 
-    prompt_our_side = f"""<|user|>
-    {prompt}
-    <|assistant|>
-    """
-    print(prompt_our_side)
 
-    #prompt_our_side
-    import time
-    model_path="Phi-3-mini-4k-instruct-q4.gguf"
-    from llama_cpp import Llama
-    llm = Llama(model_path=model_path,
-                n_gpu_layers=-1)
-    s = time.time()
-    response = llm(f"""{prompt_our_side}""", max_tokens=600)
-    print("time for llm inference-> ",time.time()-s, "sec")
-    #response
-    phi_response = response['choices'][0]['text']
+    
 
 
     def login_method(signIn_id:str, password_id:str , username_id:str, driver=driver):
@@ -98,32 +82,21 @@ def crawler_method(user: User = Depends()):
         except Exception as e:
             return str(e)
 
-    USER_QUERY = f"{phi_response} . Can you login?"
+    question = f"""You are an expert Front End Developer who works with html and css.Can you find id of three html components:  sign in button, password and email and login using any function , given html text as follows: \n {opening_tags}"""
+    prompt=\
+    f"""
+    User Query: {question}<human_end>
+    """
 
-    prompt_f1 = \
-    f'''
-    def login_method(signIn_id:str, password_id:str , username_id:str, driver= None):
-        """the method takes ids of signin button, password value, username value and login into the site"""
-        try:
-            driver.find_element(by= By.ID, value=username_id).send_keys(username1)
+    raven_prompt = build_raven_prompt([ login_method] , prompt)
+    
 
-            driver.find_element(by= By.ID, value=password_id).send_keys(password1)
-            driver.find_element(by= By.ID, value=signIn_id).click()
-            return driver
-        except Exception as e:
-            return str(e)
-    User Query: {USER_QUERY}<human_end>
-    '''
-
-    function_call = query_raven(prompt_f1)
+    function_call = query_raven(raven_prompt)
     #LOGGEDIN
 
     #uncomment following
 
     driver = eval(function_call)
-
-
-
     #driver = login_method(signin_id, password_id, username_id , driver)
     time.sleep(2)
     # order_date = "a-column a-span3"
@@ -134,7 +107,6 @@ def crawler_method(user: User = Depends()):
     # order_date_total = driver.find_element(by = By.CLASS_NAME, value = order_total)
     # order_id_class = driver.find_element(by = By.CLASS_NAME, value = order_id)
     
-
     try:
         order_dates = []
         order_prices = []

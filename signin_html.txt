@@ -1,0 +1,646 @@
+<div id="a-page"><script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{}</script>
+    <div class="a-section a-padding-medium auth-workflow">
+      <div class="a-section a-spacing-none auth-navbar">
+        
+
+
+
+
+
+<div class="a-section a-spacing-medium a-text-center">
+  
+    
+
+    
+      
+
+
+<a class="a-link-nav-icon" href="/ref=ap_frn_logo">
+  
+  <i class="a-icon a-icon-logo" role="img" aria-label="Amazon"></i>
+
+  
+  
+    
+    
+      <i class="a-icon a-icon-domain-in a-icon-domain" role="presentation"></i>
+    
+  
+</a>
+
+    
+  
+</div>
+
+
+      </div>
+
+      <div id="authportal-center-section" class="a-section">
+        
+          
+          
+            <div id="authportal-main-section" class="a-section">
+              
+
+
+
+
+
+<div class="a-section a-spacing-base auth-pagelet-container">
+  
+    
+    
+      <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning" aria-live="polite" aria-atomic="true"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+        <p>
+          <a class="a-link-normal" href="/gp/help/customer/display.html/ref=ap_cookie_error_help?">
+            
+          </a>
+        </p>
+      </div></div></div>
+    
+  
+</div>
+
+<div class="a-section auth-pagelet-container">
+  
+
+
+
+
+
+
+
+
+
+<!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+<!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+<!-- show a warning modal dialog when the third party account is connected with Amazon -->
+
+
+
+
+
+
+
+<div id="passkey-error-alert" class="a-box a-alert a-alert-error aok-hidden" role="alert"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Passkey error</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+  <p id="passkey-client-error-message">
+    Something went wrong, please sign-in another way or follow any instructions provided by your device.
+  </p>
+  <p id="passkey-generic-server-error-message" class="aok-hidden">
+    Sorry, your passkey is not working. There might be a problem with the server. Sign in with your password or try your passkey again later.
+  </p>
+  <p id="passkey-server-error-message" class="aok-hidden"></p>
+</div></div></div>
+
+  <!-- shows an info modal dialog when a test is using Single Page -->
+  
+
+
+  
+  
+    <div class="a-section a-spacing-base">
+      <div class="a-section">
+        
+        <form name="signIn" method="post" novalidate="" action="https://www.amazon.in/ap/signin" class="a-spacing-none" data-fwcim-id="WSy2Ti2W">
+          
+            
+            
+              <input type="hidden" name="appActionToken" value="QDWlvr8M5BRS4w1gHMG9dVFGGEcj3D"><input type="hidden" name="appAction" value="SIGNIN">
+            
+          
+
+          
+
+
+
+
+  
+    <input type="hidden" name="webAuthnChallengeIdForAutofill" value="elQNuJMoa8qfBYq24Xwk2BEtGk7q7s8i:EU">
+  
+    <input type="hidden" name="webAuthnGetParametersForAutofill" value="eyJycElkIjoiYW1hem9uLmluIiwiY2hhbGxlbmdlIjoiZWxRTnVKTW9hOHFmQllxMjRYd2syQkV0R2s3cTdzOGkiLCJ0aW1lb3V0Ijo5MDAwMDAsImFsbG93Q3JlZGVudGlhbHMiOm51bGwsIm1lZGlhdGlvbiI6ImNvbmRpdGlvbmFsIiwidXNlclZlcmlmaWNhdGlvbiI6InByZWZlcnJlZCJ9">
+  
+    <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmluL3lvdXItb3JkZXJzL29yZGVycy9yZWY9bmF2X3lvdXJfYWNjb3VudA==">
+  
+    <input type="hidden" name="prevRID" value="ape:NUM5Q0VRTThRMUcyRDJNVDk4UUU=">
+  
+    <input type="hidden" name="workflowState" value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.SYyfXcrjstRzEUBks8v5-ux71vnmJBHf6nX-dxMDbUmWhTy4ANQ3bg.sOSmqn91oMDGW3rZ.ubJLdRVoiygbfoOcVQ44uqKn6wxfjsyaankOr71wUDGj9ssGF709aa80G9R56ntRxqjTs8nnT59aECEEfV6gFbAkenBFlbRQPHqACoCS2-xroTtnxetrvN8qgT32CPvCWX3kUA3_4TkkNBewhJPAydhYA1J0aBLguPCQ0wMD9uSZ94ajc38SbUZXDGmFPa4un-XaLI0bZjEBKXtmTIFvhHhAHjeqvEixgRfhe1hjm0sK6YuiSSTDvxDSzJ-0DPDUxyDwOYQi1ZxeePC-jCFITTv5UZKCsL7syUoFNpnLT4vkIGZi0G5AOzHhlmPxdTMOEQ.qLHEeF9TX_d0ey7-JgNURw">
+  
+
+
+
+          <div class="a-section">
+            <div class="a-box"><div class="a-box-inner a-padding-extra-large">
+              <h1 class="a-spacing-small">
+                Sign in
+              </h1>
+              <!-- optional subheading element -->
+              
+              
+
+              <div class="a-row a-spacing-base">
+                <label for="ap_email" class="a-form-label">
+                  Email or mobile phone number
+                </label>
+                
+                
+                  
+                    
+                  
+                  
+                
+                <input type="email" maxlength="128" id="ap_email" autocomplete="webauthn" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" aria-describedby="Enter your email or mobile phone number" aria-required="true">
+                
+
+
+
+<div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+  Enter your email or mobile phone number
+</div></div></div>
+
+              </div>
+
+              
+              <input type="hidden" name="create" value="0">
+
+              
+              
+
+
+
+
+
+<div class="a-section a-spacing-large">
+  <div class="a-row">
+    <div class="a-column a-span5">
+      <label for="ap_password" class="a-form-label">
+        
+          
+            Password
+          
+          
+        
+      </label>
+    </div>
+
+    
+    
+      <div class="a-column a-span7 a-text-right a-span-last">
+        
+
+
+
+  
+  
+    
+  
+
+<a id="auth-fpp-link-bottom" class="a-link-normal" href="https://www.amazon.in/ap/forgotpassword?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;webAuthnChallengeIdForAutofill=elQNuJMoa8qfBYq24Xwk2BEtGk7q7s8i%3AEU&amp;webAuthnGetParametersForAutofill=eyJycElkIjoiYW1hem9uLmluIiwiY2hhbGxlbmdlIjoiZWxRTnVKTW9hOHFmQllxMjRYd2syQkV0R2s3cTdzOGkiLCJ0aW1lb3V0Ijo5MDAwMDAsImFsbG93Q3JlZGVudGlhbHMiOm51bGwsIm1lZGlhdGlvbiI6ImNvbmRpdGlvbmFsIiwidXNlclZlcmlmaWNhdGlvbiI6InByZWZlcnJlZCJ9&amp;language=en_IN&amp;pageId=amzn_retail_yourorders_in&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fyour-orders%2Forders%2Fref%3Dnav_your_account&amp;prevRID=5C9CEQM8Q1G2D2MT98QE&amp;openid.assoc_handle=amzn_retail_yourorders_in&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+  Forgot Password
+</a>
+      </div>
+    
+  </div>
+  
+  
+    
+      
+    
+    
+  
+  
+  <input type="password" maxlength="1024" id="ap_password" autocomplete="current-password" name="password" tabindex="2" class="a-input-text a-span12 auth-required-field" aria-describedby="Enter your password" aria-required="true">
+
+  
+    
+
+
+
+<div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+  Enter your password
+</div></div></div>
+
+  
+</div>
+
+
+              <div class="a-section a-spacing-extra-large">
+                
+                
+
+
+
+
+
+
+
+
+
+                
+                <span class="a-button a-button-span12 a-button-primary auth-disable-button-on-submit" id="a-autoid-0"><span class="a-button-inner"><input id="signInSubmit" tabindex="5" class="a-button-input" type="submit" aria-labelledby="a-autoid-0-announce"><span class="a-button-text" aria-hidden="true" id="a-autoid-0-announce">
+                  Sign in
+                </span></span></span>
+
+                
+                
+                  
+
+
+
+<div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+  By continuing, you agree to Amazon's <a href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=200545940">Conditions of Use</a> and <a href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=200534380">Privacy Notice</a>.
+</div> 
+
+                
+
+                
+<script>
+  function cf() {
+    if (typeof window.uet === 'function') {
+      uet('cf');
+    }
+    if (window.embedNotification &&
+      typeof window.embedNotification.onCF === 'function') {
+      embedNotification.onCF();
+    }
+  }
+</script>
+
+<script type="text/javascript">cf()</script>
+
+
+                
+                
+
+
+
+
+  <div class="a-row a-spacing-top-medium">
+    <div class="a-section a-text-left">
+      <label for="auth-remember-me" class="a-form-label">
+        <div data-a-input-name="rememberMe" class="a-checkbox"><label><input type="checkbox" name="rememberMe" value="true"><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+          Keep me signed in.
+          <span class="a-declarative" data-action="a-popover" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-a-popover" data-a-popover="{&quot;closeButtonLabel&quot;:&quot;Close&quot;,&quot;activate&quot;:&quot;onclick&quot;,&quot;header&quot;:&quot;\&quot;Keep Me Signed In\&quot; Checkbox&quot;,&quot;inlineContent&quot;:&quot;\u003cp>Choosing \&quot;Keep me signed in\&quot; reduces the number of times you're asked to Sign-In on this device.\u003c\/p>\n\u003cp>To keep your account secure, use this option only on your personal devices.\u003c\/p>&quot;}" data-csa-c-id="t5i5c8-yz62nb-j68lzv-bvsmvw">
+            <a id="remember_me_learn_more_link" href="javascript:void(0)" role="button" class="a-popover-trigger a-declarative">
+              Details
+            <i class="a-icon a-icon-popover"></i></a>
+          </span>
+        </span></label></div>
+      </label>
+    </div>
+  </div>
+
+              </div>
+
+              
+
+              
+                  
+
+
+
+
+  
+  
+  
+    
+      
+      
+      
+        
+        
+      
+    
+  
+
+              
+
+              
+
+
+
+
+
+
+              
+                
+                
+                  
+                    
+                    <div class="a-divider a-divider-break"><h5 aria-level="5">New to Amazon?</h5></div>
+                    <span id="auth-create-account-link" class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a id="createAccountSubmit" href="https://www.amazon.in/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;webAuthnChallengeIdForAutofill=elQNuJMoa8qfBYq24Xwk2BEtGk7q7s8i%3AEU&amp;webAuthnGetParametersForAutofill=eyJycElkIjoiYW1hem9uLmluIiwiY2hhbGxlbmdlIjoiZWxRTnVKTW9hOHFmQllxMjRYd2syQkV0R2s3cTdzOGkiLCJ0aW1lb3V0Ijo5MDAwMDAsImFsbG93Q3JlZGVudGlhbHMiOm51bGwsIm1lZGlhdGlvbiI6ImNvbmRpdGlvbmFsIiwidXNlclZlcmlmaWNhdGlvbiI6InByZWZlcnJlZCJ9&amp;language=en_IN&amp;pageId=amzn_retail_yourorders_in&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fyour-orders%2Forders%2Fref%3Dnav_your_account&amp;prevRID=5C9CEQM8Q1G2D2MT98QE&amp;openid.assoc_handle=amzn_retail_yourorders_in&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="a-button-text">
+                      Create your Amazon account
+                    </a></span></span>
+                  
+                
+              
+
+              
+
+              
+              
+              
+            </div></div>
+            
+          </div>
+        <input name="metadata1" type="hidden" value="true"><input type="hidden" name="aaToken" value="{&quot;uniqueValidationId&quot;:&quot;65c1554f-d5e9-439b-921a-388a4d7a22f8&quot;}"></form>
+      </div>
+    </div>
+  
+
+</div>
+            </div>
+          
+        
+      </div>
+
+      
+      <div id="right-2">
+      </div>
+
+      <div class="a-section a-spacing-top-extra-large auth-footer">
+        
+
+
+
+<div class="a-divider a-divider-section"><div class="a-divider-inner"></div></div>
+
+<div class="a-section a-spacing-small a-text-center a-size-mini">
+  <span class="auth-footer-seperator"></span>
+
+  <ul>
+    
+      <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;">
+        
+          
+            
+          
+
+          
+        
+
+        <a class="a-link-normal a-nowrap" target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=200545940">
+          Conditions of Use
+        </a>
+        <span class="auth-footer-seperator"></span>
+      </li>
+    
+      <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;">
+        
+          
+            
+          
+
+          
+        
+
+        <a class="a-link-normal a-nowrap" target="_blank" href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=200534380">
+          Privacy Notice
+        </a>
+        <span class="auth-footer-seperator"></span>
+      </li>
+    
+      <li style="list-style-type: none; margin: 0; padding:0; display: inline-block;">
+        
+          
+            
+          
+
+          
+        
+
+        <a class="a-link-normal a-nowrap" target="_blank" href="/help">
+          Help
+        </a>
+        <span class="auth-footer-seperator"></span>
+      </li>
+    
+  </ul>
+
+  
+</div>
+
+
+
+
+<div class="a-section a-spacing-none a-text-center">
+  
+
+
+
+
+
+<span class="a-size-mini a-color-secondary">
+  © 1996-2024, Amazon.com, Inc. or its affiliates
+</span>
+
+</div>
+
+      </div>
+    </div>
+
+    <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">
+    </div>
+
+    
+
+
+<script type="text/javascript">
+  try {
+    var metadataList = document.getElementsByName('metadata1');
+    if (metadataList.length == 0) {
+      var input = document.createElement('input');
+      input.name = 'metadata1';
+      input.type = 'hidden';
+      input.value = 'true';
+
+      var authenticationFormList = document.getElementsByName('signIn');
+      for (var index = 0; index < authenticationFormList.length; index++) {
+        authenticationFormList[index].appendChild(input);
+      }
+    } else {
+      for (var index = 0; index < metadataList.length; index++) {
+        metadataList[index].value = 'true';
+      }
+    }
+  } catch (e) {
+    if (typeof window.ueLogError === 'function') {
+      window.ueLogError(e, {
+        message: 'Failed to populate default metadata value',
+        logLevel: 'warn',
+        attribution: 'FWCIMAssets'
+      });
+    }
+  }
+</script>
+<script type="text/javascript">
+    window.fwcimCmd = [
+        
+            ['profile', 'signIn']
+            
+        
+    ];
+</script>
+
+
+    
+        
+
+<!--ACICSetup-->
+
+<script type="text/javascript">
+var acicActionType = false;
+P.when('auth-validate-form-handler', "acic-component", "ready").execute('acic-setup', function(AuthValidateFormHandler) {
+    var aautTargetForm = document.querySelector('form[name="signIn"]');
+    if (aautTargetForm) {
+        setAAToken("259-8170207-5746018-" + Date.now(), aautTargetForm);
+        if ((typeof acic !== 'undefined') && (acic != null)) {
+            acic.setupACIC({
+                "data-mode": "1", 
+                "data-ref-id": "ap",
+                "data-context": getClientContext(aautTargetForm),
+                "data-callback": function(data) {
+                    if (data.sessionToken) {
+                        setAAToken(data.sessionToken, aautTargetForm);
+                    }
+                    if (data.actionType && data.actionType !== "PASS") {
+                        acicActionType = true;
+                    }
+                },
+                "data-host-config": "prod.EUAmazon",
+                "data-event-trigger": "PageLoad",
+            });
+        }
+
+        var submitInputs = aautTargetForm.querySelectorAll('input[type="submit"]');
+        if (submitInputs && submitInputs.length === 1) {
+            var submitInput = submitInputs[0];
+            submitInput.addEventListener("click", function(event) {
+                acicEventListener(AuthValidateFormHandler, aautTargetForm, submitInput, event);
+            });
+        }
+    }
+});
+
+var acicShouldSetup = true;
+function acicEventListener(AuthValidateFormHandler, aautTargetForm, submitInput, event) {
+    
+    
+    if (acicShouldSetup &&
+        (typeof acic !== 'undefined') && (acic != null) &&
+        AuthValidateFormHandler.validate(aautTargetForm)) {
+
+        if (acicActionType || isTestEmailPattern(getEmailAddress(aautTargetForm))) {
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+            event.preventDefault();
+
+            acic.setupACIC({
+                "data-ref-id": "ap",
+                "data-context": getClientContext(aautTargetForm),
+                "data-callback": function(data) {
+                    if (data.sessionToken) {
+                        setAAToken(data.sessionToken, aautTargetForm);
+                    }
+                    submitForm(submitInput);
+                },
+                "data-host-config": "prod.EUAmazon",
+                "data-event-trigger": "SubmitInput",
+                "data-fwcim": getFwcimBlob(aautTargetForm),
+            });
+        } else if (true) {
+            acic.setupACICforAsyncReporting({
+                "data-ref-id": "ap",
+                "data-context": getClientContext(aautTargetForm),
+                "data-callback": function(data) {
+                },
+                "data-host-config": "prod.EUAmazon",
+                "data-event-trigger": "SubmitInput",
+                "data-fwcim": getFwcimBlob(aautTargetForm),
+            });
+        }
+    }
+}
+
+function submitForm(submitInput) {
+    acicShouldSetup = false;
+    submitInput.click();
+}
+
+function setAAToken(sessionToken, aautTargetForm) {
+    if (sessionToken) {
+        var aaTokenInput = aautTargetForm.querySelector("input[name='aaToken']");
+        if (!aaTokenInput) {
+            aaTokenInput = document.createElement("input");
+            aaTokenInput.type = "hidden";
+            aaTokenInput.name = "aaToken";
+            aautTargetForm.appendChild(aaTokenInput);
+        }
+        aaTokenInput.value = sessionToken;
+    }
+}
+
+function getClientContext(aautTargetForm) {
+    var context = {};
+    var emailAddress = getEmailAddress(aautTargetForm);
+    if (emailAddress) {
+        context.emailAddress = emailAddress;
+    }
+    context.sessionId = "259-8170207-5746018";
+    context.marketplaceId = "A21TJRUUN4KGV";
+    context.rid = "5C9CEQM8Q1G2D2MT98QE";
+    context.ubid = "258-0639334-1564960";
+
+    context.pageType = "AuthenticationPortal";
+
+    var appActionInput = aautTargetForm.querySelector("input[name='appAction']");
+    if (appActionInput) {
+        context.appAction = appActionInput.value;
+    }
+
+    var subPageTypeInput = aautTargetForm.querySelector("input[name='subPageType']");
+    if (subPageTypeInput) {
+        context.subPageType = subPageTypeInput.value;
+    }
+
+    return JSON.stringify(context);
+}
+
+function getFwcimBlob(aautTargetForm) {
+    var fwcimBlob = aautTargetForm.querySelector("input[name='metadata1']");
+    if(fwcimBlob && fwcimBlob.value !== 'true') {
+        return fwcimBlob.value;
+    }
+    return null
+}
+
+function getEmailAddress(aautTargetForm) {
+    var emailInput = aautTargetForm.querySelector("input[type='email']");
+    if (!emailInput) {
+        emailInput = aautTargetForm.querySelector("input[name='email']");
+    }
+    if (emailInput) {
+        return emailInput.value;
+    }
+    return null;
+}
+
+function isTestEmailPattern(emailAddress) {
+    
+    return emailAddress &&
+        (emailAddress.indexOf('sentinels') >= 0) &&
+        emailAddress.endsWith('@amazon.com');
+}
+</script>
+
+    
+
+
+
+    
+    <!-- cache slot rendered -->
+    
+  </div>

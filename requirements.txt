@@ -16,7 +16,6 @@ urllib3==2.2.2
 websocket-client==1.8.0
 wheel==0.43.0
 wsproto==1.2.0
-llama_cpp_python==0.2.81
 fastapi==0.111.0
 requests==2.32.3
 huggingface-hub==0.23.0
