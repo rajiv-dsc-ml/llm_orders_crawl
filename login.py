@@ -51,7 +51,7 @@ def crawler_method(user: User = Depends()):
 
 
 
-    USER_QUERY = f"Can you extract all the opening tag of html file at {filepath} which contains these words 'email', 'password', 'signIn', 'login'"
+    USER_QUERY = f"Can you extract all the opening tag of html file at {filepath} which contains these words 'email', 'password', 'signIn', 'login', 'phone number', 'username', 'email_id', 'email-id', 'email id','passcode' "
 
     prompt_f1 = \
     f'''
